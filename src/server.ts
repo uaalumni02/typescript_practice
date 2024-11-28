@@ -11,6 +11,8 @@ const port = process.env.PORT || 3000;
 
 const router = express.Router();
 
+import infoRoutes from "./routes/data.routes"
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -29,6 +31,8 @@ try {
 } catch (err) {
   console.error("Unable to Connect to MongoDB", err);
 }
+
+router.use("/data", infoRoutes);
 
 app.use("/api", router);
 
