@@ -23,4 +23,4 @@ const responseServerError = (res) => {
         message: "internal server error",
     });
 };
-export { responseNotFound, responseOkCreated, responseOk, responseServerError, };
+export { responseNotFound, responseOkCreated, responseOk, responseServerError };
