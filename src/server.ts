@@ -11,7 +11,8 @@ const port = process.env.PORT || 3000;
 
 const router = express.Router();
 
-import infoRoutes from "./routes/data.routes"
+// Import the routes from dist folder
+import infoRoutes from "./routes/data.routes.js";
 
 app.use(cors());
 app.use(express.json());
@@ -34,7 +35,5 @@ try {
 
 router.use("/data", infoRoutes);
 
-app.use("/api", router);
-
 app.listen(port, () => log("Server is running"));
-export default app;
+

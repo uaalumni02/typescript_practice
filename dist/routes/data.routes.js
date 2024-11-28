@@ -1,5 +1,5 @@
 import express from "express";
-import infoController from "../controllers/info";
+import infoController from "../controllers/info.js";
 const router = express.Router();
 // Wrap async route handlers to catch errors
 const asyncHandler = (fn) => (req, res, next) => {

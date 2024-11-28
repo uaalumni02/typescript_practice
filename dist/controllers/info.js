@@ -1,6 +1,6 @@
-import Db from "../db/db";
-import MyData from "../models/myData";
-import * as Response from "../helpers/response/response";
+import Db from "../db/db.js";
+import MyData from "../models/myData.js";
+import * as Response from "../helpers/response/response.js";
 class PersonalData {
     static async addData(req, res) {
         const PersonalInfo = { ...req.body };

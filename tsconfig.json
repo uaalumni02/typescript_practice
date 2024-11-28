@@ -3,10 +3,9 @@
     "target": "ESNext",              // Use ESNext or higher to support import/export
     "module": "ESNext",              // Use ESNext for ES module support
     "moduleResolution": "node",      // Resolve modules like Node.js does
-    "esModuleInterop": true,         // Allow default imports from CommonJS modules
     "outDir": "./dist",              // Output the compiled files to the dist directory
     "rootDir": "./src",              // Input files are in the src directory
-    "strict": true,
+    "esModuleInterop": true,         // Allow default imports from CommonJS modules
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
