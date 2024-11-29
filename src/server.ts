@@ -33,6 +33,8 @@ try {
   console.error("Unable to Connect to MongoDB", err);
 }
 
+app.use("/api", router);
+
 router.use("/data", infoRoutes);
 
 app.listen(port, () => log("Server is running"));
